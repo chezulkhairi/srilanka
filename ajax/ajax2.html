@@ -49,7 +49,7 @@
     layer.bindPopup(feature.properties.City + ", " + feature.properties.State + ", " + feature.properties.Country);
   }
 
-  $.getJSON("cities.geoJSON", function (cities) { // pull data from external file
+  $.getJSON("businesses.geoJSON", function (cities) { // pull data from external file
     L.geoJson(cities, {
       onEachFeature: onEachFeature,
       pointToLayer: function (feature, latlng) {
