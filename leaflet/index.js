@@ -1,5 +1,5 @@
 var map = new L.Map('map');
-map.setView([1.290270, 103.851959], 16, false);
+//map.setView([1.290270, 103.851959], 16, false);
 new L.TileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png', {
   attribution: 'Map tiles &copy; <a href="https://mapbox.com">MapBox</a>',
   maxZoom: 18,
