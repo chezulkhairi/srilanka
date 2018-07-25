@@ -40,7 +40,7 @@ osmb.click(function(e) {
     .setLatLng(L.latLng(e.lat, e.lon))
     .setContent('<b>OSM ID '+ e.feature +'</b>')
     .openOn(map);
-  map.flyTo([e.lat, e.lon], 18, {animate: true});
+  //map.flyTo([e.lat, e.lon], 18, {animate: true});
 
   var url = 'https://data.osmbuildings.org/0.2/uejws863/feature/'+ e.feature +'.json';
   ajax(url, function(json) {
