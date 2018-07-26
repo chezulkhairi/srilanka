@@ -27,48 +27,20 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {"wallColor": "rgb(255,0,0)",
+              "roofColor": "rgb(255,128,0)",
+              "height": 120,
+              "minHeight": 90,
+              "piso": 3},
       "geometry": {
         "type": "Polygon",
         "coordinates": [
-          [
-            [
-              -71.10785007476807,
-              42.35067885065581
-            ],
-            [
-              -71.10692739486693,
-              42.35067885065581
-            ],
-            [
-              -71.10692739486693,
-              42.35115458831002
-            ],
-            [
-              -71.10785007476807,
-              42.35115458831002
-            ],
-            [
-              -71.10785007476807,
-              42.35067885065581
-            ]
-          ]
-        ]
-      }
-    }
-  ]
-}
-    
-    
-    
-    
-      // var map = new L.Map('map').setView([41.38886738109273, 2.1858716011047363], 18);
-
-      // new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      //    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-      //    maxZoom: 22}
-      // ).addTo(map);
-
+          [ [-71.10785007476807, 42.35067885065581],
+            [-71.10692739486693, 42.35067885065581],
+            [-71.10692739486693, 42.35115458831002],
+            [-71.10785007476807, 42.35115458831002],
+            [-71.10785007476807, 42.35067885065581
+          ]]}}]}
 
       for (i = 0, gridLength = myTower.features.length; i < gridLength; i++) {
           myTower.features[i].properties.wallColor = '#0033CC';
